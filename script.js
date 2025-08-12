@@ -9,7 +9,8 @@ document.getElementById('weatherForm').addEventListener('submit', async function
     }
 
     const apiKey = '6debc839280a4a5097a125437252001';
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`;
+    // const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`;
+     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`;
 
     try {
         const response = await fetch(apiUrl);
